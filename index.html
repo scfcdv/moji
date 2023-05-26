@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="favicon.ico">
+<title>文字数カウンター</title>
+<script>
+function countCharacters() {
+var inputText = document.getElementById("input").value;
+var characterCount = inputText.length;document.getElementById("count").innerHTML = "" + characterCount;}
+</script>
+</head>
+<body>
+<label for="input"></label>
+<input type="text" id="input" oninput="countCharacters()">
+<p id="count"></p>
+</body>
+</html>
